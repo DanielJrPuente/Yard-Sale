@@ -140,3 +140,29 @@ body {
         margin-bottom: 24px;
     }
 }
+/*My Account */
+
+.title-myAccount {
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+.input-name,
+.input-email, 
+.input-password {
+    margin-bottom: 22px;
+}
+ 
+@media (max-width: 640px) {
+    .create-button {
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        margin-bottom: 24px;
+    }
+
+    .login-account {
+        height: 50vh;
+    }
+}
+
