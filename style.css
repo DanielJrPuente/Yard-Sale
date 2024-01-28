@@ -405,3 +405,77 @@ body {
     font-size: var(--sm);
     color: var(--very-light-pink);
 }
+/*NavBar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.menu-navBar {
+    display: none;
+}
+.logo-navBar{
+    display: 100px;
+}
+.navBar-left {
+    display: flex;
+}
+.navBar-left ul {
+    margin-left: 12px;
+}
+.navBar-left ul li a,
+.navBar-rigth ul li a{ 
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.navBar-left ul li a:hover,
+.navBar-rigth ul li a:hover{ 
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+.navBar-left ul,
+.navBar-rigth ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.navBar-email {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+.navBar-shoppingCart {
+    position: relative;
+}
+.navBar-shoppingCart div {
+    display: flex;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50px;
+    font-size: var(--sm);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 640px) {
+    .menu-navBar {
+        display: block;
+    }
+    .navBar-left ul{
+        display: none;
+    }
+    .navBar-email {
+        display: none;
+    }
+}
