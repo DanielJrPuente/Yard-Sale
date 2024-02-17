@@ -540,3 +540,40 @@ nav {
         width: 100%;
     }
 }
+
+/*Shopping-cart*/
+.cart-detail {
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    padding: 24px;
+    box-sizing: border-box;
+    right: 0;
+}
+.title-cart{
+    display: flex;
+    border-bottom: 1px solid var(--text-input-field);
+    margin-bottom: 12px;
+}
+.title-cart img{
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+.title-Shopping-cart {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.cart-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.cart-content{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 640px) { 
+    .cart-detail {
+        width: 100%;
+    }
+}
